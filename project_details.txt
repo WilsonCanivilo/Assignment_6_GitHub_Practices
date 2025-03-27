@@ -1,6 +1,0 @@
-This is a placeholder for project details.
-
-Feature: Added dark mode support to improve night-time usability.
-Feature: Integrated GitHub Actions workflow for automated release builds.
-
-
