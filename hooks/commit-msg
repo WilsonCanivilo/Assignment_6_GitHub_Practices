@@ -1,0 +1,9 @@
+#!/bin/sh
+commit_msg=$(cat "$1")
+pattern="^(Add|Fix|Update|Remove): .+"
+
+echo "$commit_msg" | grep -qE "$pattern"
+if [ $? -ne 0 ]; then
+  echo "Commit message must start with one of: Add:, Fix:, Update:, Remove:"
+  exit 1
+fi
